@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="container">
+    <div class="calculator">
+        <input   id="screen" type="text" placeholder="0">
+        
+        <button class="firstrow" onclick=" allclear()" >AC</button>
+        <button class="firstrow" onclick=" display.value = 
+        display.value.toString().slice (0,-1);" >C</button>
+        <button class="firstrow" onclick=" show('%')">%</button>
+        <button class="arithmetics" onclick=" show('/')">&divide;</button>
+        <button onclick=" show('7')">7</button>
+        <button onclick=" show('8')">8</button>
+        <button onclick=" show('9')">9</button>
+        <button class="arithmetics" onclick=" show('*')">*</button>
+        <button onclick=" show('4')">4</button>
+        <button onclick=" show('5')">5</button>
+        <button onclick=" show('6')">6</button>      
+        <button class="arithmetics" onclick=" show('-')">-</button>
+        <button onclick=" show('1')">1</button>
+        <button onclick=" show('2')">2</button>
+        <button onclick=" show('3')">3</button>
+        <button class="arithmetics" onclick=" show('+')">+</button>
+        <button onclick=" show('00')" >00</button>
+        <button class="button" onclick=" show('0')">0</button>
+        <button onclick=" show('.')">.</button>
+        <button class="arithmetics" onclick=" calc()">=</button>
+
+    </div>
+
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>
